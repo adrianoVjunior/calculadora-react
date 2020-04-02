@@ -9,7 +9,6 @@ export default class SimpleCalculator extends Component {
             param1: 0,
             param2: 0,
             resultado: 0,
-            lista: [5, 3, 8, 9]
         }
     }
 
@@ -49,11 +48,11 @@ export default class SimpleCalculator extends Component {
 
     render() {
         return (
-            <div className='container'>
+            <div className='simpleCalculator'>
                 <label>SimpleCalculator</label>
                 <div className='inputs'>
                     <input placeholder='1° número' name='param1' onKeyUp={this.handleChange} type='number' />
-                    <input  placeholder='2° número' name='param2' onKeyUp={this.handleChange} type='number' />
+                    <input placeholder='2° número' name='param2' onKeyUp={this.handleChange} type='number' />
                 </div>
                 <div className='actions'>
                     <button className='btn' onClick={() => this.soma(this.state)}>Somar</button>
